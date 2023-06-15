@@ -1,22 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import Items from './components/Items';
+import { Box, Button } from '@mui/material';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header className="">
+        {/* <Dragdrop/> */}
+        {/* <ItemCard/> */}
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+          <div style={{
+            marginTop: '2vh', width: '53vw'
+          }}>
+            <h1>Select your sections</h1>
+          </div>
+        </div>
+        <Items />
+        
+
       </header>
     </div>
   );
